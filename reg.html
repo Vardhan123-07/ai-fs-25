@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Form</title>
+    <style>
+      .container {
+        background-color: rgb(187, 152, 80);
+        width: 500px;
+        height: 400px;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <h2>Registration Form</h2>
+
+        <form action="/submit" method="post">
+          <label for="name">First Name:</label>
+          <input type="text" id="name" name="name" required /><br><br>
+
+          <label for="name">Last Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <!-- Email input -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <!-- Password input -->
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+
+          <!-- Radio buttons -->
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br /><br />
+
+          <input type="checkbox" id="agree" name="agree" required />
+          <label for="agree">I agree to the terms and conditions</label
+          ><br /><br />
+
+          <input type="submit" value="Register" />
+        </form>
+      </div>
+    </center>
+  </body>
+</html>
